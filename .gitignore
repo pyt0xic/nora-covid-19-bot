@@ -24,3 +24,5 @@ bot/.env.production.local
 bot/npm-debug.log*
 bot/yarn-debug.log*
 bot/yarn-error.log*
+
+models/
