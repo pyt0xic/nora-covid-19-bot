@@ -22,9 +22,9 @@ class ActionFaqDistancing(Action):
         logger.debug("Detected FAQ intent: {}".format(intent))
 
         if intent in ["faq_distancing"]:
-            text = """Social distancing is a public health practice that aims to prevent sick people 
-            from coming in close contact with healthy people in order to reduce opportunities for disease transmission. 
-            It can include large-scale measures like canceling group events or closing public spaces, as well as individual 
+            text = """Social distancing is a public health practice that aims to prevent sick people
+            from coming in close contact with healthy people in order to reduce opportunities for disease transmission.
+            It can include large-scale measures like canceling group events or closing public spaces, as well as individual
             decisions such as avoiding crowds."""
             message = {
                 "type": "image",

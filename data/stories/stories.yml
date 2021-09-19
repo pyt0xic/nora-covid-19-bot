@@ -1,0 +1,82 @@
+version: "2.0"
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - story: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - story: faq distancing
+    steps:
+      - intent: faq_distancing
+      - action: action_faq_distancing
+  - story: more faq distancing
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: faq_distancing
+      - action: action_faq_distancing
+  - story: faq spread happy
+    steps:
+      - intent: faq_spread
+      - action: action_faq_spread
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+  - story: faq spread sad
+    steps:
+      - intent: faq_spread
+      - action: action_faq_spread
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+  - story: faq symptoms happy
+    steps:
+      - intent: faq_symptoms
+      - action: action_faq_symptoms
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+  - story: faq symptoms sad
+    steps:
+      - intent: faq_symptoms
+      - action: action_faq_symptoms
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_sad
+  - story: faq status
+    steps:
+      - intent: faq_status
+      - action: action_faq_status
+  - story: more faq status
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: faq_status
+      - action: action_faq_status

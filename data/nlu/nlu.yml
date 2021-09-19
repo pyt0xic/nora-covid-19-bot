@@ -1,0 +1,237 @@
+version: "2.0"
+nlu:  
+  - intent: company_open
+    examples: |
+      - any changes to your services?
+      - are there any changes to your operations?
+      - are there any changes to your services due to coronavirus?
+      - are there any changes to your services?
+      - are you open at different times?
+      - are you open the same hours?
+      - are you operating as normal?
+      - are you operating at reduced capacity?
+      - are you still open?
+      - are you still operating as usual?
+      - are you still operating at full capacity?
+      - are your offices closed?
+      - are your services still available?
+      - can i expect coronavirus to cause changes to your service?
+      - can i expected business as usual?
+      - can i expected normal service?
+      - can i still book a meeting?
+      - can i use your service with online chat?
+      - can i use your service with video chat?
+      - do we have to meet virtually?
+      - have you closed your offices due to corona virus?
+      - have you closed your offices?
+      - how are your operating during the covid-19 pandemic?
+      - how can i arrange a meeting?
+      - how can we meet virtually?
+      - is it business as usual?
+      - is the company currently active?
+      - is the company currently operating?
+      - is the office still open?
+      - is video chat available?
+      - is your office still open?
+      - will the office still be open?
+      - will you continue operating as usual?
+      - will you continue operating?
+      - will you continue to work as usual during coronavirus?
+  - intent: company_wfh
+    examples: |
+      - are people working from home?
+      - are there any key workers?
+      - are you in the office?
+      - are your people working from home right now?
+      - are your staff in the office right now?
+      - are your staff in the office?
+      - are your staff still working?
+      - are your staff working from home?
+      - can i contact your staff at the office?
+      - can i contact your staff right now?
+      - can you work from home if needed?
+      - do you have any key workers?
+      - do you have people still working?
+      - do you have the resources for working from home?
+      - do you have the resources to work from home?
+      - do you still have key workers?
+      - do your staff have the resources to work from home?
+      - does your company have the resources to work from home?
+      - how can i contact your staff?
+      - is anyone still working?
+      - where are your staff?
+      - who is available for remote meetings?
+      - who is available for virtual meetings?
+      - who is available to speak to while your office is closed?
+      - who is available while staff are working from home?
+      - who is available while working from home?
+      - who is still working?
+  - intent: company_mitigation
+    examples: |
+      - are you keeping your workers safe?
+      - are you paying your staff even if they are unwell?
+      - can you tell me your continuity plan?
+      - do you have a business continuity plan?
+      - do you have a disaster recovery plan?
+      - do you have a plan for economic recovery?
+      - does the company have a continuity plan for this crisis?
+      - how are you going to cope with coronavirus?
+      - how are you going to cope with the pandemic?
+      - how are you keeping staff safe?
+      - how are you protecting your staff?
+      - how are you protecting your workers?
+      - how does your business plan to recover?
+      - how is the company going to cope with covid19?
+      - how will you ensure business continuity during the outbreak?
+      - how will you manage if people are self-isolating?
+      - how will your business recover?
+      - is there a continuity plan for coronavirus?
+      - is there a continuity plan?
+      - is there a disaster recovery plan?
+      - what are you doing for business continuity?
+      - what are you doing if people are self-isolating?
+      - what are you doing if staff are self-isolating?
+      - what are you doing if staff are sick?
+      - what are you doing if staff are unwell?
+      - what are you doing to cope with covid-19?
+      - what are you doing to manage corona at your company?
+      - what are your mitigation strategies for coronavirus?
+      - what are your mitigation strategies?
+      - what are your strategies for dealing with coronavirus as a company?
+      - what are your strategies for the covid-19 outbreak?
+      - what services can you still provide while i'm self-isolating?
+      - what will do do if staff are sick?
+      - what will you do if staff are unwell?
+      - what will you do so the company can recover more quickly?
+      - will you business recover?
+  - intent: company_deliveries
+    examples: |
+      - are you still able to deliver goods?
+      - are you still able to deliver products by post during the pandemic?
+      - are you still doing deliveries during the outbreak?
+      - can i order online during the covid-19 outbreak?
+      - can i order online during the outbreak?
+      - can i order your items online?
+      - can i order your products online?
+      - can i receive deliveries without contact?
+      - can you deliver with zero contact?
+      - can you do contact-free deliveries?
+      - can you do deliveries by zero-contact post?
+      - can you send your products in the post?
+      - can you sent items by post?
+      - can you still deliver goods?
+      - do you provide deliveries to people who are isolating?
+      - do you provide deliveries?
+      - how does covid-19 affect home delivery services?
+      - how will coronavirus affect your home delivery?
+      - is corona virus affecting your delivery channels?
+      - will covid affect your home delivery services?
+
+  - synonym: child
+    examples: |
+      - kid
+      - daughter
+      - son
+      - kids
+      - children
+      - baby
+      - babies
+      - daughters
+      - sons
+  - synonym: corona
+    examples: |
+      - coronavirus
+      - covid
+      - covid-19
+      - covid19
+      - covid 19
+      - virus
+      - viral
+      - pandemic
+      - epidemic
+      - outbreak
+      - illness
+      - disease
+      - viruses
+      - infection
+  - synonym: hospital
+    examples: |
+      - health centre
+      - infirmary
+      - medical centre
+      - medical institution
+      - clinic
+      - hospitals
+      - health centres
+      - infirmaries
+      - medical centres
+      - medical institutions
+      - clinics
+      - emergency room
+      - emergency
+  - synonym: illness
+    examples: |
+      - asthma
+      - diabetes
+      - asthmatic
+      - diabetic
+      - hypertension
+      - heart
+      - heart disease
+      - cardiovascular
+      - cardiovascular disease
+      - respiratory
+      - respiratory disease
+      - chronic
+      - cancer
+      - lung
+      - lung disease
+      - high blood pressure
+      - blood pressure
+  - synonym: pet
+    examples: |
+      - cat
+      - dog
+      - rabbit
+      - fish
+      - hamster
+      - rat
+      - bird
+      - guinea-pig
+      - goldfish
+      - chicken
+      - cats
+      - dogs
+      - rabbits
+      - rats
+      - birds
+      - guinea-pigs
+      - chickens
+      - pets
+  - synonym: pregnancy
+    examples: |
+      - pregnant
+      - expecting
+      - trimester
+      - with child
+  - synonym: senior
+    examples: |
+      - elderly
+      - elder
+      - older
+      - retired
+      - old
+      - pensioners
+      - oaps
+      - parents
+      - grandparents
+      - pensioner
+      - seniors
+      - elders
+      - oap
+      - parent
+      - grandparent
+      - mother
+      - father
+      - grandmother
+      - grandfather

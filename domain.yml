@@ -1,3 +1,4 @@
+version: "2.0"
 intents:
   - greet
   - goodbye
@@ -29,40 +30,43 @@ intents:
   - faq_origin
   - faq_status
 
+entities:
+  - location
+  - language
+
 responses:
   utter_greet:
-  - text: "Hey! I'm Nora Covid Bot. How are you feeling?"
+    - text: "Hey! I'm Nora Covid Bot. How are you feeling?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - buttons:
-    - payload: /affirm
-      title: 👍
-    - payload: /deny
-      title: 👎
-    text: "Did that help you?"
+    - buttons:
+        - payload: /affirm
+          title: 👍
+        - payload: /deny
+          title: 👎
+      text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on! 🙂"
+    - text: "Great, carry on! 🙂"
 
   utter_goodbye:
-  - text: "Bye 👋"
+    - text: "Bye 👋"
 
   utter_sad:
     - text: "Thanks, I appreciate that, and I'm sorry 😔"
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-          
-actions:
-- action_faq_distancing
-- action_faq_spread
-- action_faq_status
-- action_faq_symptoms
+    - text: "I am a bot, powered by Rasa."
 
-    
+actions:
+  - action_faq_distancing
+  - action_faq_spread
+  - action_faq_status
+  - action_faq_symptoms
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
